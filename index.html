@@ -35,21 +35,22 @@
             margin: 0 auto;
             padding: 0 3rem;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .nav-logo {
-            height: 45px;
-            width: auto;
-            flex-shrink: 0;
-        }
-
-        .nav-links {
-            display: flex;
+            justify-content: center;
             align-items: center;
             gap: 3rem;
+        }
+
+        .logo-section {
+            background: #0d0d0d;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .logo-banner {
+            max-width: 600px;
+            width: 90%;
+            height: auto;
+            filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.7));
         }
         
         nav a {
@@ -356,12 +357,8 @@
                 background-size: cover;
             }
             
-            .nav-logo {
-                height: 35px;
-            }
-
-            .nav-links {
-                gap: 1.5rem;
+            .logo-banner {
+                max-width: 400px;
             }
             
             .hero-subtitle {
@@ -394,7 +391,7 @@
                 flex-wrap: wrap;
                 gap: 0.75rem;
                 padding: 0 1rem;
-                justify-content: space-between;
+                justify-content: center;
             }
             
             nav a {
@@ -435,8 +432,8 @@
 <body>
     <header>
         <nav>
-            <a href="#home"><img src="MikeDuhaime&Howlers-Full.jpg" alt="Mike Duhaime & the Howlers" class="nav-logo"></a>
             <div class="nav-links">
+                <a href="#home">Home</a>
                 <a href="#tour">Tour</a>
                 <a href="#about">About</a>
                 <a href="#links">Listen</a>
@@ -451,6 +448,10 @@
             <a href="https://open.spotify.com/artist/3To2Iew23BImwC0d8jUIPq?si=agrv7HZvRpq3LMwDLZi7IQ" class="cta-button" target="_blank">Listen on Spotify</a>
             <a href="https://drive.google.com/drive/folders/1s3tkL6V6-GccUE1bGUvQeJ5bAS2KNFuO?usp=drive_link" class="cta-button secondary" target="_blank">Live Videos</a>
         </div>
+    </section>
+
+    <section class="logo-section">
+        <img src="MikeDuhaime&Howlers-Full.jpg" alt="Mike Duhaime & the Howlers" class="logo-banner">
     </section>
 
     <section class="tour-section" id="tour">
