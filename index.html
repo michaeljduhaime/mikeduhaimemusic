@@ -153,24 +153,33 @@
             text-transform: uppercase;
         }
         
-        .about-grid {
+        .about-photos {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 5rem;
-            align-items: start;
+            gap: 2rem;
             margin-bottom: 4rem;
         }
-        
+
+        .about-photos img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
         .about-text {
+            max-width: 700px;
+            margin: 0 auto;
             font-size: 1.2rem;
             line-height: 2;
             color: #c4b5a0;
+            text-align: center;
         }
-        
+
         .about-text p {
             margin-bottom: 2rem;
         }
-        
+
         .about-text strong {
             color: #e8dcc8;
             font-weight: 700;
@@ -355,11 +364,15 @@
                 max-width: 300px;
             }
             
-            .about-grid {
+            .about-photos {
                 grid-template-columns: 1fr;
-                gap: 2.5rem;
+                gap: 1.5rem;
             }
-            
+
+            .about-photos img {
+                height: 350px;
+            }
+
             .about-text {
                 font-size: 1.1rem;
             }
@@ -449,29 +462,20 @@
     <section id="about">
         <h2 class="section-title">About</h2>
         
-        <div class="about-grid">
-            <div class="about-text">
-                <p>From the Texas Hill Country. Started in an Austin dorm room in 2018. Songs got finished in laundromats and on front porches—wherever things were quiet enough to hear them clearly.</p>
-                <p>The music lives somewhere between country, folk, indie, and Americana. A little Carolina twang, a little California gold, a lot of Austin. It doesn't really stay in one place.</p>
-                <p>The Howlers turned it into a full thing. Pedal steel, electric and acoustic guitars, keys, bass, drums, and three-part harmonies that make the songs hit different. Some nights it's loud. Some nights it's not. Both are good.</p>
-            </div>
-            
-            <div class="highlights">
-                <h3>Highlights</h3>
-                <ul>
-                    <li>167 tickets sold at Sahara Lounge (10/15/25)</li>
-                    <li>2M+ total streams / 50k+ monthly listeners</li>
-                    <li>Opened for Flatland Cavalry</li>
-                    <li>Opened for Jordy Searcy</li>
-                    <li>Featured on Spotify's "Happy Folk" playlist</li>
-                    <li>Fast-growing organic traction in Austin</li>
-                </ul>
-            </div>
+        <div class="about-photos">
+            <img src="DSC03758.jpeg" alt="Mike Duhaime in the studio">
+            <img src="DSC03619.jpeg" alt="Mike Duhaime in the studio">
+        </div>
+
+        <div class="about-text">
+            <p>From the Texas Hill Country. Started writing songs in an Austin dorm room in 2018. Most of them got finished in laundromats and on front porches, wherever things were quiet enough to hear them clearly.</p>
+            <p>The music sits somewhere between country, folk, indie, and Americana. A little Carolina twang, a little California gold, a lot of Austin. It doesn't really stay in one place.</p>
+            <p>The Howlers turned it into a full band. Pedal steel, electric and acoustic guitars, keys, bass, drums, and three-part harmonies. Some nights it's loud. Some nights it's not. Both are good.</p>
         </div>
 
         <div class="live-sound">
             <h3>Live Sound</h3>
-            <p>Full-band Americana — high-energy southern rock or warm, harmony-driven folk.</p>
+            <p>Full-band Americana. High-energy southern rock or warm, harmony-driven folk.</p>
             <p class="instrument-list">Pedal Steel • Electric & Acoustic Guitars • Keys • Bass • Drums • 3-Part Harmonies</p>
         </div>
     </section>
@@ -502,6 +506,20 @@
         <h2 class="section-title">Contact</h2>
         <div class="contact-info">
             <p><a href="mailto:mikeduhaimemusic@gmail.com">mikeduhaimemusic@gmail.com</a></p>
+        </div>
+    </section>
+
+    <section class="highlights-section">
+        <div class="highlights">
+            <h3>Highlights</h3>
+            <ul>
+                <li>167 tickets sold at Sahara Lounge (10/15/25)</li>
+                <li>2M+ total streams / 50k+ monthly listeners</li>
+                <li>Opened for Flatland Cavalry</li>
+                <li>Opened for Jordy Searcy</li>
+                <li>Featured on Spotify's "Happy Folk" playlist</li>
+                <li>Fast-growing organic traction in Austin</li>
+            </ul>
         </div>
     </section>
 
